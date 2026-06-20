@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <title>Login — All Menus</title>
+    </head>
+    <body>
+        <div class='login-signup'>
+            <a href="login.html" class='login-link'>Login</a>
+            <a href="signup.html" class='sign-up'>Sign Up</a>
+        </div>
+        <h1><a href='index.html'><img src="favicon/High-Resolution-Color-Logo-on-Transparent-Background.png" alt="All Menus" class="site-logo"></a></h1>
+        <div class="auth-container">
+            <h2 class="auth-title">Log In</h2>
+            <form id="login-form" class="auth-form" novalidate>
+                <label class="auth-label" for="auth-email">Email</label>
+                <input class="auth-input" id="auth-email" type="email" placeholder="you@example.com" required autocomplete="email">
+                <label class="auth-label" for="auth-password">Password</label>
+                <input class="auth-input" id="auth-password" type="password" placeholder="••••••••" required autocomplete="current-password">
+                <p id="auth-error" class="auth-msg"></p>
+                <button type="submit" class="auth-btn">Log In</button>
+            </form>
+            <p class="auth-switch">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="auth.js"></script>
+    </body>
+</html>

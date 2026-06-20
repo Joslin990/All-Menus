@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <title>Restaurant Detail</title>
+    </head>
+    <body>
+        <div class='login-signup'>
+            <a href="login.html" class='login-link'>Login</a>
+            <a href="signup.html" class='sign-up'>Sign Up</a>
+        </div>
+        <h1><a href='index.html'><img src="favicon/High-Resolution-Color-Logo-on-Transparent-Background.png" alt="All Menus" class="site-logo"></a></h1>
+        <div class="detail-container">
+            <a class="back-link" href="javascript:history.back()">&#8592; Back to results</a>
+            <div id="detail-content">
+                <p class="status-message status-loading">Loading restaurant details&#8230;</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="auth.js"></script>
+        <script src="detail.js"></script>
+    </body>
+</html>
